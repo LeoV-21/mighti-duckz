@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Mighti Duckz</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <span class="duck-icon">&#x1F986;</span>
+        <span class="logo-text">Mighti Duckz</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#team">The Squad</a></li>
+        <li><a href="#rules">The Code</a></li>
+        <li><a href="#join">Join Us</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Est. When We Got Too Tired of Running Alone</p>
+      <h1 class="hero-title">The Mighti Duckz</h1>
+      <p class="hero-sub">We run. We sweat. We quack.</p>
+      <div class="hero-badges">
+        <span class="badge">Not Speed Champions</span>
+        <span class="badge">Zero Trophies</span>
+        <span class="badge">Infinite Vibes</span>
+      </div>
+      <a href="#team" class="btn-primary">Meet the Squad</a>
+    </div>
+    <div class="hero-duck-art">
+      <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="duck-svg">
+        <!-- Body -->
+        <ellipse cx="100" cy="130" rx="65" ry="50" fill="#2a9d8f"/>
+        <!-- Wing -->
+        <ellipse cx="90" cy="135" rx="45" ry="28" fill="#21867a" transform="rotate(-10 90 135)"/>
+        <!-- Head -->
+        <circle cx="145" cy="95" r="32" fill="#2a9d8f"/>
+        <!-- Eye -->
+        <circle cx="155" cy="88" r="6" fill="white"/>
+        <circle cx="157" cy="88" r="3" fill="#264653"/>
+        <!-- Bill -->
+        <ellipse cx="176" cy="101" rx="18" ry="9" fill="#e9c46a" transform="rotate(-15 176 101)"/>
+        <!-- Shoes / feet running -->
+        <ellipse cx="80" cy="178" rx="16" ry="8" fill="#e9c46a" transform="rotate(-20 80 178)"/>
+        <ellipse cx="118" cy="182" rx="16" ry="8" fill="#e9c46a" transform="rotate(15 118 182)"/>
+        <!-- Sweatband -->
+        <rect x="118" y="70" width="54" height="10" rx="5" fill="#e76f51" transform="rotate(-8 145 75)"/>
+        <!-- Motion lines -->
+        <line x1="28" y1="110" x2="48" y2="110" stroke="white" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+        <line x1="20" y1="125" x2="42" y2="125" stroke="white" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+        <line x1="28" y1="140" x2="48" y2="140" stroke="white" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+      </svg>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container">
+      <h2 class="section-title">Who Are We?</h2>
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="about-icon">&#x1F3C3;</div>
+          <h3>We Run</h3>
+          <p>Not fast. Not gracefully. But we absolutely run. Sometimes we even do it on purpose.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon">&#x1F4AA;</div>
+          <h3>We Train</h3>
+          <p>Loosely defined. Mostly involves showing up, complaining together, and then feeling really good about it afterward.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon">&#x1F986;</div>
+          <h3>We Quack</h3>
+          <p>It's our thing. Don't ask. Just know that when a Duckz runs by, you will hear us before you see us.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon">&#x1F37A;</div>
+          <h3>We Recover</h3>
+          <p>The most important part of any training plan. We take post-run nutrition very, very seriously.</p>
+        </div>
+      </div>
+      <div class="about-story">
+        <h3>Our Origin Story</h3>
+        <p>
+          It started, as all great things do, with someone saying "we should really start working out more."
+          Nobody remembers who said it. Nobody takes credit for it either. What we do know is that one
+          fateful morning, a group of friends showed up at the same spot, realized none of them trained
+          for this, and decided that sticking together was the only way any of them would finish.
+        </p>
+        <p>
+          The Mighti Duckz were born — a ragtag band of joggers, power walkers,
+          and one guy who insists he's "active resting." We don't discriminate on pace.
+          We discriminate on attitude. Show up. Suffer together. Celebrate everything.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="team section" id="team">
+    <div class="container">
+      <h2 class="section-title">The Squad</h2>
+      <p class="section-sub">Every great team has characters. We have nothing but.</p>
+      <div class="team-grid" id="team-grid">
+
+        <div class="member-card">
+          <div class="member-avatar" style="background: #2a9d8f;">
+            <span class="member-emoji">&#x1F9A2;</span>
+          </div>
+          <div class="member-nickname">The Captain</div>
+          <div class="member-name">Alex "Quack Attack" Rivera</div>
+          <div class="member-title">Founder / Chief Motivator / Loudest One</div>
+          <p class="member-bio">
+            Alex started the group because they read somewhere that running is "good for you."
+            Three years in, still not totally convinced, but way too committed to quit.
+            Known for signature battle cry mid-run that can be heard from two blocks away.
+            Personal record: finishing a 5K and immediately suggesting they do another one.
+            Favorite post-run meal: literally anything. Loves everyone. Will not shut up about it.
+          </p>
+          <div class="member-stats">
+            <span class="stat"><strong>Miles logged:</strong> "A lot"</span>
+            <span class="stat"><strong>Complaints:</strong> Zero (publicly)</span>
+          </div>
+        </div>
+
+        <div class="member-card">
+          <div class="member-avatar" style="background: #e76f51;">
+            <span class="member-emoji">&#x1F525;</span>
+          </div>
+          <div class="member-nickname">The Speedster</div>
+          <div class="member-name">Jordan "Two Gears" Chen</div>
+          <div class="member-title">Designated Fast Person / Token Athlete</div>
+          <p class="member-bio">
+            Jordan has two speeds: warm-up pace (which is everyone else's sprint)
+            and whatever comes after that. Constantly lapping the group, constantly
+            coming back to "encourage" people, which really just means running alongside
+            you going slow enough to have a full conversation while you're wheezing.
+            Claims running is "relaxing." Nobody believes them. Everyone respects them.
+          </p>
+          <div class="member-stats">
+            <span class="stat"><strong>Laps ahead:</strong> Usually 2</span>
+            <span class="stat"><strong>Empathy level:</strong> 10/10</span>
+          </div>
+        </div>
+
+        <div class="member-card">
+          <div class="member-avatar" style="background: #e9c46a;">
+            <span class="member-emoji">&#x1F4F8;</span>
+          </div>
+          <div class="member-nickname">The Photographer</div>
+          <div class="member-name">Sam "Golden Hour" Okafor</div>
+          <div class="member-title">Official Documentarian / Historian / Hype Person</div>
+          <p class="member-bio">
+            Sam's gear-to-athletic-output ratio is something that scientists study.
+            Somehow always finds the perfect lighting, even at 6am.
+            Responsible for every great group photo the Duckz has ever taken —
+            and therefore technically never in any of them.
+            The Instagram algorithm genuinely respects them.
+            Their running form is impeccable when a camera is present.
+          </p>
+          <div class="member-stats">
+            <span class="stat"><strong>Photos taken:</strong> Thousands</span>
+            <span class="stat"><strong>In photos:</strong> Maybe 12</span>
+          </div>
+        </div>
+
+        <div class="member-card">
+          <div class="member-avatar" style="background: #6a4c93;">
+            <span class="member-emoji">&#x1F9B5;</span>
+          </div>
+          <div class="member-nickname">The Strategist</div>
+          <div class="member-name">Morgan "The Algorithm" Park</div>
+          <div class="member-title">Route Planner / Data Analyst / Spreadsheet Enthusiast</div>
+          <p class="member-bio">
+            Morgan has a spreadsheet for everything. Routes, split times, elevation profiles,
+            optimal hydration schedules, and a projected finish time that is always optimistic.
+            Shows up to every run with a plan. The group never follows the plan.
+            Morgan continues to make plans. This is their destiny.
+            Also somehow always knows where the nearest bathroom is on any route.
+          </p>
+          <div class="member-stats">
+            <span class="stat"><strong>Spreadsheets:</strong> 47</span>
+            <span class="stat"><strong>Plans followed:</strong> 3</span>
+          </div>
+        </div>
+
+        <div class="member-card">
+          <div class="member-avatar" style="background: #264653;">
+            <span class="member-emoji">&#x1F9B4;</span>
+          </div>
+          <div class="member-nickname">The Veteran</div>
+          <div class="member-name">Casey "OG" Martinez</div>
+          <div class="member-title">Elder Statesperson / Living Legend / Walking History Book</div>
+          <p class="member-bio">
+            Casey has been running since before some of the Duckz were born.
+            Has a story for every road, every hill, every type of weather.
+            Gives advice freely and without being asked.
+            The advice is good. We hate to admit it's good.
+            Owns running shoes from three separate decades. All of them are "still great."
+            Paces every run perfectly, arrives early, never complains. Makes everyone feel inadequate in the nicest possible way.
+          </p>
+          <div class="member-stats">
+            <span class="stat"><strong>Years running:</strong> "A few"</span>
+            <span class="stat"><strong>Excuses made:</strong> 0</span>
+          </div>
+        </div>
+
+        <div class="member-card">
+          <div class="member-avatar" style="background: #f4a261;">
+            <span class="member-emoji">&#x1F6CB;</span>
+          </div>
+          <div class="member-nickname">The Philosopher</div>
+          <div class="member-name">Riley "Deep Thoughts" Kim</div>
+          <div class="member-title">Motivational Speaker / Existential Crisis Manager</div>
+          <p class="member-bio">
+            Nobody asked Riley to bring up Nietzsche on mile 3. Riley did it anyway.
+            Somehow makes suffering feel meaningful.
+            Has been known to stop mid-run to observe a particularly nice tree.
+            Post-run talks from Riley have actually convinced two people to change careers.
+            Runs with their eyes half-closed. Somehow never trips.
+            The group's unofficial life coach, therapist, and chaos coordinator.
+          </p>
+          <div class="member-stats">
+            <span class="stat"><strong>Epiphanies/run:</strong> 3-5</span>
+            <span class="stat"><strong>Trees hugged:</strong> Many</span>
+          </div>
+        </div>
+
+      </div>
+      <p class="team-note">* All bios are accurate to within 80% of reality. Stats are vibes-based. Names can be updated — this is YOUR team page!</p>
+    </div>
+  </section>
+
+  <!-- THE CODE -->
+  <section class="rules section" id="rules">
+    <div class="container">
+      <h2 class="section-title">The Duckz Code</h2>
+      <p class="section-sub">These are our laws. We take them seriously. Mostly.</p>
+      <ol class="rules-list">
+        <li>
+          <span class="rule-num">01</span>
+          <div>
+            <strong>No Duck Left Behind.</strong>
+            The group finishes together. Always. The fast ones come back. The slow ones keep moving. Nobody gets left on the course.
+          </div>
+        </li>
+        <li>
+          <span class="rule-num">02</span>
+          <div>
+            <strong>Showing Up is the Win.</strong>
+            You ran today. That's the whole thing. The pace, the distance, the conditions — all secondary. You showed up. You're a Duck.
+          </div>
+        </li>
+        <li>
+          <span class="rule-num">03</span>
+          <div>
+            <strong>Celebrate Everything.</strong>
+            New personal best? Celebrate. First time finishing a route? Celebrate. Remembered to bring water? That's worth a group text at minimum.
+          </div>
+        </li>
+        <li>
+          <span class="rule-num">04</span>
+          <div>
+            <strong>Complaining is Allowed, Quitting is Not.</strong>
+            You may absolutely tell us how hard this is. We will agree. We will also keep running.
+          </div>
+        </li>
+        <li>
+          <span class="rule-num">05</span>
+          <div>
+            <strong>The Post-Run Meal is Sacred.</strong>
+            We earned it. We will enjoy it. No calorie math. No exceptions.
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- JOIN -->
+  <section class="join section" id="join">
+    <div class="container join-inner">
+      <div class="join-text">
+        <h2 class="section-title">Think You're a Duck?</h2>
+        <p>
+          The Mighti Duckz don't recruit based on speed, experience, or talent.
+          We recruit based on willingness to show up and a decent sense of humor
+          about how hard this all is.
+        </p>
+        <p>
+          If that sounds like you — reach out. Lace up.
+          We'll save you a spot at the back of the pack (it's the best spot, honestly).
+        </p>
+        <a href="mailto:hello@mightiduckz.com" class="btn-primary">Slide Into Our DMs</a>
+      </div>
+      <div class="join-duck-art">
+        <svg viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="80" cy="80" r="75" fill="#264653" opacity="0.3"/>
+          <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle" font-size="80">&#x1F986;</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <span class="duck-icon">&#x1F986;</span>
+        <span>Mighti Duckz</span>
+      </div>
+      <p class="footer-tagline">An original crew. Zero affiliation with anything Hollywood. Just ducks who run.</p>
+      <p class="footer-copy">&copy; 2025 The Mighti Duckz. All quacks reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
