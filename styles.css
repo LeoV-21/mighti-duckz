@@ -521,6 +521,20 @@ body {
   line-height: 1.8;
 }
 
+.join-fee-note {
+  background: rgba(0,0,0,0.2);
+  border-left: 4px solid var(--yellow);
+  border-radius: 8px;
+  padding: 16px 20px;
+  font-size: 0.95rem !important;
+  color: white !important;
+  line-height: 1.7;
+}
+
+.join-fee-note strong {
+  color: var(--yellow);
+}
+
 .join-text .btn-primary {
   background: var(--yellow);
   color: var(--dark);
