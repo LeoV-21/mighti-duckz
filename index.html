@@ -540,10 +540,8 @@
           about how hard this all is.
         </p>
         <p>
-          If that sounds like you — great. Here's how it works:
-          You'll submit your interest, and Meagan will schedule the Final Boss Interview.
-          Nobody knows the questions. Nobody who's passed will talk about it.
-          Good luck. You'll need it.
+          Fill out the application below. Meagan will review it personally.
+          Nobody knows what she's looking for. Good luck. You'll need it.
         </p>
         <p class="join-fee-note">
           &#x26A0;&#xFE0F; <strong>IMPORTANT:</strong> There is a non-refundable application fee of <strong>$95</strong>
@@ -553,7 +551,31 @@
           The $95 is also non-refundable if Meagan looks at you and simply says "no."
           We appreciate your understanding and your $95.
         </p>
-        <a href="mailto:Victoria39lol@gmail.com" class="btn-primary">Apply to Be a Duck</a>
+
+        <form class="apply-form" id="apply-form" novalidate>
+          <div class="form-group">
+            <label for="q-name">Your Name</label>
+            <input type="text" id="q-name" placeholder="What do we call you?" required />
+          </div>
+          <div class="form-group">
+            <label for="q-pace">What's your pace... just wondering.</label>
+            <input type="text" id="q-pace" placeholder="e.g. 10 min/mile, 'I survive', 'it depends on the snacks'" required />
+          </div>
+          <div class="form-group">
+            <label for="q-word">If you had to use one word to describe yourself, what would it be?</label>
+            <input type="text" id="q-word" placeholder="Just one. Choose wisely." required />
+          </div>
+          <div class="form-group">
+            <label for="q-sign">What's your sign?</label>
+            <input type="text" id="q-sign" placeholder="We're not saying it matters. We're also not saying it doesn't." required />
+          </div>
+          <div class="form-group">
+            <label for="q-why">Why do you want to join this group?</label>
+            <textarea id="q-why" rows="4" placeholder="Be honest. Meagan will know if you're not." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary btn-submit">Submit Application &#x1F986;</button>
+          <p class="form-disclaimer">Clicking submit will open your email client with your answers pre-filled. Just hit send!</p>
+        </form>
       </div>
       <div class="join-duck-art">
         <svg viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">

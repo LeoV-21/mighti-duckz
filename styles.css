@@ -545,6 +545,64 @@ body {
   background: #d4a827;
 }
 
+.apply-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.form-group label {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: white;
+}
+
+.form-group input,
+.form-group textarea {
+  background: rgba(255,255,255,0.12);
+  border: 1.5px solid rgba(255,255,255,0.25);
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: white;
+  outline: none;
+  transition: border-color 0.2s, background 0.2s;
+  resize: vertical;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: rgba(255,255,255,0.4);
+  font-style: italic;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--yellow);
+  background: rgba(255,255,255,0.18);
+}
+
+.btn-submit {
+  align-self: flex-start;
+  margin-top: 4px;
+  font-size: 1rem;
+}
+
+.form-disclaimer {
+  font-size: 0.78rem !important;
+  color: rgba(255,255,255,0.45) !important;
+  font-style: italic;
+  margin-top: -8px !important;
+}
+
 .join-duck-art {
   flex-shrink: 0;
   width: 180px;

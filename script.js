@@ -95,6 +95,50 @@ logoText.addEventListener('click', () => {
   }, 1400);
 });
 
+// --- Application form → mailto ---
+const applyForm = document.getElementById('apply-form');
+if (applyForm) {
+  applyForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const name  = document.getElementById('q-name').value.trim();
+    const pace  = document.getElementById('q-pace').value.trim();
+    const word  = document.getElementById('q-word').value.trim();
+    const sign  = document.getElementById('q-sign').value.trim();
+    const why   = document.getElementById('q-why').value.trim();
+
+    if (!name || !pace || !word || !sign || !why) {
+      alert('Please answer all questions. Meagan requires complete applications.');
+      return;
+    }
+
+    const subject = encodeURIComponent(`Mighti Duckz Application — ${name}`);
+    const body = encodeURIComponent(
+`MIGHTI DUCKZ APPLICATION
+========================
+
+Name: ${name}
+
+Q1: What's your pace... just wondering?
+${pace}
+
+Q2: If you had to use one word to describe yourself, what would it be?
+${word}
+
+Q3: What's your sign?
+${sign}
+
+Q4: Why do you want to join this group?
+${why}
+
+========================
+⚠️ Reminder: $95 non-refundable application fee must be sent to Nani before the interview is scheduled.`
+    );
+
+    window.location.href = `mailto:Victoria39lol@gmail.com?subject=${subject}&body=${body}`;
+  });
+}
+
 // Inject keyframe for toast
 const style = document.createElement('style');
 style.textContent = `
