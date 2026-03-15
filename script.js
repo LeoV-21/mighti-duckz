@@ -101,13 +101,15 @@ if (applyForm) {
   applyForm.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    const name  = document.getElementById('q-name').value.trim();
-    const pace  = document.getElementById('q-pace').value.trim();
-    const word  = document.getElementById('q-word').value.trim();
-    const sign  = document.getElementById('q-sign').value.trim();
-    const why   = document.getElementById('q-why').value.trim();
+    const name     = document.getElementById('q-name').value.trim();
+    const pace     = document.getElementById('q-pace').value.trim();
+    const word     = document.getElementById('q-word').value.trim();
+    const sign     = document.getElementById('q-sign').value.trim();
+    const why      = document.getElementById('q-why').value.trim();
+    const nani     = document.getElementById('q-nani').value.trim();
+    const playlist = document.getElementById('q-playlist').value.trim();
 
-    if (!name || !pace || !word || !sign || !why) {
+    if (!name || !pace || !word || !sign || !why || !nani || !playlist) {
       alert('Please answer all questions. Meagan requires complete applications.');
       return;
     }
@@ -130,6 +132,12 @@ ${sign}
 
 Q4: Why do you want to join this group?
 ${why}
+
+Q5: Have you sent Nani the $95? Be honest.
+${nani}
+
+Q6: On a scale of 1-10, how would you rate your playlist?
+${playlist}
 
 ========================
 ⚠️ Reminder: $95 non-refundable application fee must be sent to Nani before the interview is scheduled.`
