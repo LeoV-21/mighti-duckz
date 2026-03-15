@@ -529,7 +529,7 @@
     </div>
   </section>
 
-  <!-- JOIN -->
+  <!-- JOIN INTRO -->
   <section class="join section" id="join">
     <div class="container join-inner">
       <div class="join-text">
@@ -551,45 +551,6 @@
           The $95 is also non-refundable if Meagan looks at you and simply says "no."
           We appreciate your understanding and your $95.
         </p>
-
-        <form class="apply-form" id="apply-form" novalidate>
-          <div class="form-group">
-            <label for="q-name">Your Name</label>
-            <input type="text" id="q-name" placeholder="What do we call you?" required />
-          </div>
-          <hr class="form-divider" />
-          <div class="form-group">
-            <label for="q-pace">What's your pace... just wondering.</label>
-            <input type="text" id="q-pace" placeholder="e.g. 10 min/mile, 'I survive', 'it depends on the snacks'" required />
-          </div>
-          <hr class="form-divider" />
-          <div class="form-group">
-            <label for="q-word">If you had to use one word to describe yourself, what would it be?</label>
-            <input type="text" id="q-word" placeholder="Just one. Choose wisely." required />
-          </div>
-          <hr class="form-divider" />
-          <div class="form-group">
-            <label for="q-sign">What's your sign?</label>
-            <input type="text" id="q-sign" placeholder="We're not saying it matters. We're also not saying it doesn't." required />
-          </div>
-          <hr class="form-divider" />
-          <div class="form-group">
-            <label for="q-why">Why do you want to join this group?</label>
-            <textarea id="q-why" rows="4" placeholder="Be honest. Meagan will know if you're not." required></textarea>
-          </div>
-          <hr class="form-divider" />
-          <div class="form-group">
-            <label for="q-nani">Have you sent Nani the $95? Be honest.</label>
-            <input type="text" id="q-nani" placeholder="There is no wrong answer. There is, however, a correct one." required />
-          </div>
-          <hr class="form-divider" />
-          <div class="form-group">
-            <label for="q-playlist">On a scale of 1-10, how would you rate your playlist?</label>
-            <input type="text" id="q-playlist" placeholder="DJ Dar will be the final judge of this. Choose your number carefully." required />
-          </div>
-          <button type="submit" class="btn-primary btn-submit">Submit Application &#x1F986;</button>
-          <p class="form-disclaimer">Clicking submit will open your email client with your answers pre-filled. Just hit send!</p>
-        </form>
       </div>
       <div class="join-duck-art">
         <svg viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">
@@ -597,6 +558,78 @@
           <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle" font-size="80">&#x1F986;</text>
         </svg>
       </div>
+    </div>
+  </section>
+
+  <!-- APPLICATION FORM -->
+  <section class="form-section section">
+    <div class="container">
+      <h2 class="section-title">The Application</h2>
+      <p class="section-sub">Answer honestly. All fields required. Meagan sees everything.</p>
+      <form class="apply-form" id="apply-form" novalidate>
+
+        <div class="form-question">
+          <div class="form-question-header">
+            <span class="form-q-num">01</span>
+            <label for="q-name">Your Name</label>
+          </div>
+          <input type="text" id="q-name" placeholder="What do we call you?" required />
+        </div>
+
+        <div class="form-question">
+          <div class="form-question-header">
+            <span class="form-q-num">02</span>
+            <label for="q-pace">What's your pace... just wondering.</label>
+          </div>
+          <input type="text" id="q-pace" placeholder="e.g. 10 min/mile, 'I survive', 'it depends on the snacks'" required />
+        </div>
+
+        <div class="form-question">
+          <div class="form-question-header">
+            <span class="form-q-num">03</span>
+            <label for="q-word">If you had to use one word to describe yourself, what would it be?</label>
+          </div>
+          <input type="text" id="q-word" placeholder="Just one. Choose wisely." required />
+        </div>
+
+        <div class="form-question">
+          <div class="form-question-header">
+            <span class="form-q-num">04</span>
+            <label for="q-sign">What's your sign?</label>
+          </div>
+          <input type="text" id="q-sign" placeholder="We're not saying it matters. We're also not saying it doesn't." required />
+        </div>
+
+        <div class="form-question">
+          <div class="form-question-header">
+            <span class="form-q-num">05</span>
+            <label for="q-why">Why do you want to join this group?</label>
+          </div>
+          <textarea id="q-why" rows="4" placeholder="Be honest. Meagan will know if you're not." required></textarea>
+        </div>
+
+        <div class="form-question">
+          <div class="form-question-header">
+            <span class="form-q-num">06</span>
+            <label for="q-nani">Have you sent Nani the $95? Be honest.</label>
+          </div>
+          <input type="text" id="q-nani" placeholder="There is no wrong answer. There is, however, a correct one." required />
+        </div>
+
+        <div class="form-question">
+          <div class="form-question-header">
+            <span class="form-q-num">07</span>
+            <label for="q-playlist">On a scale of 1-10, how would you rate your playlist?</label>
+          </div>
+          <input type="text" id="q-playlist" placeholder="DJ Dar will be the final judge of this. Choose your number carefully." required />
+        </div>
+
+        <div class="form-footer">
+          <button type="submit" class="btn-primary btn-submit">Submit Application &#x1F986;</button>
+          <p class="form-disclaimer">Clicking submit will open your email client with your answers pre-filled. Just hit send!</p>
+        </div>
+
+      </form>
     </div>
   </section>
 
