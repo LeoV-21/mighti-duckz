@@ -143,7 +143,7 @@ ${playlist}
 ⚠️ Reminder: $95 non-refundable application fee must be sent to Nani before the interview is scheduled.`
     );
 
-    window.location.href = `mailto:Victoria39lol@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:Basque.lantern.1m@icloud.com?subject=${subject}&body=${body}`;
   });
 }
 
